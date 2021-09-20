@@ -9,12 +9,14 @@ import com.learning.graphql.models.input.AgendaInput;
 import com.learning.graphql.models.input.MeetingInput;
 import com.learning.graphql.models.input.PersonInput;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+@Component
 public class Mutation implements GraphQLMutationResolver {
 
     public Meeting createMeeting(MeetingInput meetingInput){

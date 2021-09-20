@@ -5,10 +5,13 @@ import com.learning.graphql.MeetingApiApplication;
 import com.learning.graphql.models.Meeting;
 import com.learning.graphql.models.Person;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Component
 public class Query implements GraphQLQueryResolver {
 
 
