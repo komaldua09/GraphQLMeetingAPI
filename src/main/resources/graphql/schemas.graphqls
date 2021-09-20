@@ -1,0 +1,54 @@
+type Person {
+    id: ID!
+    firstName: String!
+    lastName: String
+    email: String!
+    phoneNumber: String
+}
+
+input PersonInput {
+    firstName: String!
+    lastName: String
+    email: String!
+    phoneNumber: String
+}
+
+type Meeting {
+    id: ID!
+    startsAt: Float!
+    endsAt: Float!
+    organizer: Person!
+    invitees: [Person]!
+    agendas: [Agenda]
+}
+
+input MeetingInput {
+    startsAt: Float!
+    endsAt: Float!
+    organizerID: ID!
+    invitees: [ID]!
+    agendas: [AgendaInput]
+}
+
+type Agenda{
+    id: ID!
+    title: String!
+    description: String!
+}
+
+input AgendaInput{
+    title: String!
+    description: String!
+}
+
+type Note{
+    id: ID!
+    title: String!
+    description: String!
+}
+
+type ActionItem{
+    id: ID!
+    title: String!
+    description: String!
+}

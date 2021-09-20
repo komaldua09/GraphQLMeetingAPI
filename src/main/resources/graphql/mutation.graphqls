@@ -1,0 +1,5 @@
+# The Root Mutation for the application
+type Mutation {
+    createMeeting(meeting: MeetingInput) : Meeting!
+    createPerson(person: PersonInput) : Person!
+}

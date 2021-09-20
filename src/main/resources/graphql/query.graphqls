@@ -1,0 +1,6 @@
+# The Root Query for the application
+type Query {
+    getMeetings(id: ID) : [Meeting]
+    getPersons(id: ID) : [Person]
+}
+
